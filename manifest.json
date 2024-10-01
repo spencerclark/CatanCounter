@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "BGA Traffic Logger",
+  "version": "1.0",
+  "description": "Monitor and log game actions on BoardGameArena.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.boardgamearena.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
